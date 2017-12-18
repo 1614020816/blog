@@ -1,0 +1,229 @@
+
+
+/*主要内容*/
+
+
+
+.bloglist {
+  width: 620px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.bloglist>.blog {
+  margin-bottom: 30px;
+}
+.blog h3 {
+  margin: 20px 0 10px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.blog figure {
+  float: left;
+  width: 25%;
+}
+
+.blog figure img {
+  padding: 4px;
+  border: 1px solid #f4f2f2;
+  width: 140px;
+}
+
+.blog>div {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+.blog>div>a.readmore {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  float: right;
+  /* margin: 40px 0 0 0; */
+}
+
+.date {
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+  clear: both;
+  margin: 10px 0 0 0;
+  display: inline-block;
+  background: #f6f6f6 url(../img/time.jpg) 15px center no-repeat;
+  line-height: 25px;
+  color: #838383;
+  padding-left: 25px;
+}
+
+.date span {
+  margin: 0 10px;
+}
+
+.art-type {
+  color: #41607d;
+  text-decoration: underline;
+}
+
+.rightbox {
+  width: 300px;
+  margin: 20px 20px 0 0;
+}
+
+
+/*联系我模块*/
+
+.head-title {
+  height: 45px;
+  color: #000;
+  margin: 0 0 10px 0;
+  line-height: 45px;
+  font-size: 18px;
+}
+.contact-way{
+  position: relative;
+}
+.contact-way>ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-way>ul>li {
+  width: 60px;
+  margin: 0 10px 0 5px;
+  float: left;
+  
+}
+
+
+.contact-way>ul>li>a {
+  color: #747f8c;
+  width: 60px;
+  color: #000;
+  text-align: center;
+  padding-top: 60px;
+  float: inherit;
+}
+#wechat,#weibo,#qq {
+  display: none;
+}
+.wechat, 
+.weibo, 
+.qq {background: url('../img/spritelogo.png');}
+.wechat {background-position: -180px 0;}
+.wechat:hover {background-position: -180px -60px;}
+.weibo {background-position: -60px 0;}
+.weibo:hover {background-position: -60px -60px;}
+.qq {background-position: 0 0;}
+.qq:hover {background-position: 0 -60px;}
+#wechat>img,#qq>img,#weibo>img {
+  width: 100px;
+  height: 100px;  
+  margin-left: -20px;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 9999;
+  top: 60px;
+}
+#wechat>img {
+  margin-left: 0;
+  z-index: 9999;
+  position: absolute;
+  top: 60px;
+  left: -10px;
+}
+.github {
+  background: url('../img/github1.jpg');
+  background-size: contain;
+  border-radius: 50% 50%;
+}
+.github:hover{
+  background: url('../img/github.jpg') -8px -10px;
+  background-size: 130% 130%;
+  border-radius: 50% 50%;
+}
+
+
+/*图文推荐模块*/
+
+.recommend {
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+.recommend-list>div{
+  display: block;
+  clear: both;
+  margin-bottom: 10px;
+  height: 60px;
+}
+.recommend-list>div>a>img {
+  width: 80px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+.rank {
+  overflow: hidden;
+}
+
+.rank-list {
+  margin: 10px 0;
+}
+
+.rank-list>li {
+  height: 25px;
+  font-size: 14px;
+  clear: both;
+  overflow: hidden;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+.rank-list>li>a {
+  color: #333;
+}
+
+.rank-list>li:first-child>a,
+.rank-list>li:nth-child(2)>a,
+.rank-list>li:nth-child(3)>a{
+  color: red;
+  text-decoration: underline;
+}
+
+.ad {
+  width: 300px;
+  background: url('../img/bg_pack.jpg') -50px;
+  overflow: hidden;
+  background-size: cover;
+  margin: 30px 0;
+}
+
+.ad>img {
+  width: 300px;
+}
+
+
+
+
+/* 文章内容样式设置 */
+
+.article-title {
+  color: #000;
+  font-size: 24px;
+}
+.article-info {
+  margin: 10px 0;
+}
+.article-info>span {
+  font-size: 12px;
+  margin-right: 20px;
+}
+/* 技术文章读书笔记列表大小 */
+.note-list>div {
+  width: 940px;
+  margin-left: 20px;
+}

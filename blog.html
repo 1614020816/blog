@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Blog</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<style>
+			#content>form>h2 {
+				color: black;
+			}
+			#content>form>input {
+				width: 300px;
+				height: 30px;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+	<body>
+	  <!--容器-->
+	  <div id="wrapper">
+	    <!--头部-->
+	    <header>
+	      <div class="top">
+	        <div class="logo fl">这一切没有想象的那么遭</div>
+	        <!--搜索框-->
+	        <div class="search fr">
+	        	<form action="#" method="post" id="search-form">
+	        		<input type="text" id="keyword" class="input" placeholder="请输入关键字"/>
+	        		<input type="submit" class="submit" value="搜索"/>
+	        	</form>
+	        </div>
+	        <!--清除浮动-->
+	        <div class="clear"></div>
+	        <!--导航-->
+	        <nav>
+	          <div class="nav">
+	          	<ul class="menu">
+	          		<li><a href="javascript:;" onclick="chgPage('home')">首页</a></li>
+                <li><a href="javascript:;" onclick="chgPage('article')">技术文章</a></li>
+                <li><a href="javascript:;" onclick="chgPage('note')">读书笔记</a></li>
+                <li><a href="javascript:;" onclick="chgPage('about')">个人简介</a></li>
+                <li><a href="javascript:;" onclick="chgPage('message')">给我留言</a></li>
+	          	</ul>
+	          	<div class="theme fr">
+	          	  <span id="theme-span">主题切换</span>
+                <select id="sel">
+                  <option value="0">蘇芳</option>
+                  <option value="1">枯草</option>
+                  <option value="2">石竹</option>
+                  <option value="3">錆青磁</option>
+                  <option value="4">鳩羽紫</option>
+                  <option value="5">遠洲鼠</option>
+                  <option value="6">柳煤竹茶</option>
+                  <option value="7">落栗</option>
+                </select>
+              </div>
+	          </div>
+	        </nav>
+	      </div>
+	    </header>
+	    <!--主体内容-->
+	    <section id="content">
+				<form action="#" method="post">
+            <h2>文章标题</h2><input type="text" id="title" name="title"><span class="title"></span><br/>
+            <h2>文章作者</h2><input type="text" id="author" name="author"><span class="author"></span><br/>
+						<h2>文章一级分类</h2>
+						<select name="type" id="type1" style="width: 300px;height: 40px;margin: 10px 0;">
+						</select>
+						<br/>
+						<h2>文章二级分类</h2>
+						<select name="type" id="type2" style="width: 300px;height: 40px;margin: 10px 0;">
+						</select>
+						<h2>文章描述</h2>
+						<textarea id="des" rows='10' cols='100' name="des"></textarea><br/>
+						<span class="des"></span>
+						<h2>文章内容</h2>
+            <script id="container" name="content" type="text/plain"></script>
+            <!-- 配置文件 -->
+            <script type="text/javascript" src="ueditor.config.js"></script>
+            <!-- 编辑器源码文件 -->
+            <script type="text/javascript" src="ueditor.all.js"></script>
+            <!-- 实例化编辑器 -->
+            <script type="text/javascript">
+                var ue = UE.getEditor('container',{
+                    autoHeightEnabled: true,
+                    autoFloatEnabled: true,
+										initialFrameHeight:600,
+										initialFrameWidth:960
+								});
+						</script>
+						<span class="content"></span><br/>
+						<input type="button" id="btn" value="提交"/>
+					</form>
+	    </section>
+	    <!--页底-->
+	    
+	  <footer>
+        <div class="copyright">
+          <p>&copy;2017 版权所有:这一切没有想象的那么遭 备案号: 粤ICP备17146916号-1</p>
+        </div>
+      </footer>
+		</div>
+		<script src="js/blog.js"></script>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+

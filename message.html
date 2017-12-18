@@ -1,0 +1,19 @@
+<!--留言板主体内容-->
+<section class="main">
+  <form action="" method="post">
+    <h3>留言内容</h3>
+    <textarea id="text-content" name="message" rows="15" cols="130"></textarea><br/>
+    <span class="text-content"></span>
+    <h3>您的大名</h3><input type="text" id="name" /><span class="name"></span>
+    <h3>您的电子邮件</h3><input type="text" id="email" /><span class="email"></span><br/>
+    <h3>您的个人网站</h3><input type="text" id="url" /><span class="url"></span><br/>
+    <input type="button" id="btn" value="提交留言" /><span class="tips"></span>
+  </form>
+  <div class="comment">
+    <h2>留言</h2>
+  	<ul id="comment-container">
+    </ul>
+    <div id="page" class="page_div"></div>
+  </div>
+</section>
+<script src="js/message.js"></script>

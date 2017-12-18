@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Blog</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script src="js/paging.js"></script>
+	</head>
+	<body>
+	  <!--容器-->
+	  <div id="wrapper">
+	    <!--头部-->
+	    <header>
+	      <div class="top">
+	        <div class="logo fl">这一切没有想象的那么遭</div>
+	        <!--搜索框-->
+	        <div class="search fr">
+	        	<form action="#" method="post" id="search-form">
+	        		<input type="text" id="keyword" class="input" placeholder="请输入关键字"/>
+	        		<input type="submit" class="submit" value="搜索"/>
+	        	</form>
+	        </div>
+	        <!--清除浮动-->
+	        <div class="clear"></div>
+	        <!--导航-->
+	        <nav>
+	          <div class="nav">
+	          	<ul class="menu">
+	          		<li><a href="javascript:;" onclick="chgPage('home')">首页</a></li>
+                <li><a href="javascript:;" onclick="chgPage('article')">技术文章</a></li>
+                <li><a href="javascript:;" onclick="chgPage('note')">读书笔记</a></li>
+                <li><a href="javascript:;" onclick="chgPage('about')">个人简介</a></li>
+                <li><a href="javascript:;" onclick="chgPage('message')">给我留言</a></li>
+	          	</ul>
+	          	<div class="theme fr">
+	          	  <span id="theme-span">主题切换</span>
+                <select id="sel">
+                  <option value="0">蘇芳</option>
+                  <option value="1">枯草</option>
+                  <option value="2">石竹</option>
+                  <option value="3">錆青磁</option>
+                  <option value="4">鳩羽紫</option>
+                  <option value="5">遠洲鼠</option>
+                  <option value="6">柳煤竹茶</option>
+                  <option value="7">落栗</option>
+                </select>
+              </div>
+	          </div>
+	        </nav>
+	      </div>
+	    </header>
+	    <!--主体内容-->
+	    <section id="content">
+	    </section>
+	    <!--页底-->
+	    <footer>
+        <div class="copyright">
+          <p>&copy;2017 版权所有:这一切没有想象的那么遭 备案号:粤ICP备17146916号-1</p>
+        </div>
+      </footer>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
